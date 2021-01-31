@@ -1,6 +1,6 @@
 # Ian Wallace
 # CAP 5610 - Spring 2021
-# Homework 1
+# Homework 1ana
 
 import pandas as pd
 import numpy as np
@@ -87,6 +87,7 @@ table.scale(1,2)
 
 plt.savefig('q8.svg')
 plt.savefig('q8.png')
+print()
 
 # Question 9
 print("Question 9")
@@ -163,6 +164,7 @@ ax2.set(xlabel='Age', ylabel='Number Survived')
 plt.xlabel('Age')
 plt.savefig('q11.svg')
 #plt.show()
+print()
 
 # Qusetion 12
 print("Question 12")
@@ -198,6 +200,7 @@ axs[2, 1].set_title('Pclass = 3 | Survived = 1')
 
 plt.savefig('q12.svg')
 #plt.show()
+print()
 
 print("Question 13")
 print("===========")
@@ -330,6 +333,10 @@ train_df['Sex'].replace('female', 1, inplace=True)
 
 # Rename the Sex column to Gender
 train_df.rename(columns={'Sex':'Gender'}, inplace=True)
+
+# Show results
+print(train_df.Gender)
+print()
 
 # Question 17
 print("Question 17")
